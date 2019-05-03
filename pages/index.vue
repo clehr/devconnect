@@ -1,6 +1,10 @@
 <template>
-  <div>
-    <img alt="DevConnect logo" src="../assets/logo-above-name--dark.png" />
+  <div class="responsive-app">
+    <img
+      alt="DevConnect logo"
+      src="../assets/logo-above-name--dark.png"
+      class="make-responsive"
+    />
     <div class="subtitle">
       Create &#9679; Learn &#9679; Grow
     </div>
@@ -122,5 +126,12 @@ figure {
 
 .width-70 {
   width: 70%;
+}
+.make-responsive {
+  max-width: 100%;
+}
+.responsive-app {
+  max-width: 90%;
+  margin: 10% auto 10%;
 }
 </style>
