@@ -8,6 +8,7 @@
     />
     <figcaption>
       <h3 class="make-responsive">{{ caption }}</h3>
+      <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
     </figcaption>
   </figure>
 </template>
@@ -19,7 +20,8 @@ export default {
     caption: String,
     width: String,
     height: String,
-    img: String
+    img: String,
+    subpoints: Object
   }
 }
 </script>
