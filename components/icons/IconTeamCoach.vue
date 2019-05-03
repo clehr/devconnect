@@ -2,12 +2,16 @@
   <figure class="width-15p">
     <img src="../../assets/teacher-pult.png" class="full-width" />
     <figcaption class="icon__caption text-left">Team Coach</figcaption>
+    <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
   </figure>
 </template>
 
 <script>
 export default {
-  name: 'IconTeamCoach'
+  name: 'IconTeamCoach',
+  props: {
+    subpoints: Object
+  }
 }
 </script>
 

@@ -8,12 +8,16 @@
       />
     </span>
     <figcaption class="icon__caption">Mentor</figcaption>
+    <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
   </figure>
 </template>
 
 <script>
 export default {
   name: 'IconMentor',
+  props: {
+    subpoints: Object
+  },
   data: function() {
     return {
       iconFemale: {

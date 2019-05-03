@@ -9,12 +9,16 @@
       <font-awesome-icon :icon="iconMale.name" :size="iconMale.size" />
     </span>
     <figcaption class="icon__caption">Mentee</figcaption>
+    <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
   </figure>
 </template>
 
 <script>
 export default {
   name: 'IconMentee',
+  props: {
+    subpoints: Object
+  },
   data: function() {
     return {
       iconMale: {

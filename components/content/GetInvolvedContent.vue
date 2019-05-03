@@ -1,22 +1,30 @@
 <template>
-  <div class="justify shorten center">
-    <SocialIcon
-      class="inline-block grow"
-      icon="twitter"
-      text="@devconnectHH"
-      href="https://twitter.com/devconnectHH"
-    />
-    <SocialIcon
-      class="inline-block grow margin-left-4em"
-      icon="meetup"
-      text="devconnect HH"
-      href="https://www.meetup.com/de-DE/devconnect-hh/"
-    />
-    <EmailIcon
-      class="inline-block grow"
-      icon="envelope"
-      email="devconnect.hh@gmail.com"
-    />
+  <div>
+    If you want to join us or even just want to have a look and say hello you
+    can find us under: <br /><br />
+    <div class="justify shorten center">
+      <SocialIcon
+        class="inline-block grow"
+        icon="twitter"
+        text="@devconnectHH"
+        href="https://twitter.com/devconnectHH"
+      />
+      <SocialIcon
+        class="inline-block grow margin-left-4em"
+        icon="meetup"
+        text="devconnect HH"
+        href="https://www.meetup.com/de-DE/devconnect-hh/"
+      />
+      <EmailIcon
+        class="inline-block grow"
+        icon="envelope"
+        email="devconnect.hh@gmail.com"
+      />
+    </div>
+    <br />
+    <br />
+
+    Looking forward to see you! :)
   </div>
 </template>
 
