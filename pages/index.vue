@@ -61,6 +61,27 @@ export default {
     MissionContent,
     Impressum,
     Divider
+  },
+  head() {
+    return {
+      title: 'devconnect',
+      meta: [
+        {
+          name: 'twitter:title',
+          content: 'DevConnect -  Create \\&#9679; Learn \\&#9679; Grow'
+        },
+        {
+          name: 'twitter:description',
+          content:
+            'Welcome to DevConnect where everyone who wants to learn is welcome!'
+        },
+        {
+          name: 'twitter:image',
+          content: '../assets/logo-above-name--dark.png'
+        },
+        { name: 'twitter:card', content: 'Welcome to DevConnect!' }
+      ]
+    }
   }
 }
 </script>
