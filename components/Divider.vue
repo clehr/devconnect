@@ -1,5 +1,5 @@
 <template>
-  <div class="padding-bottom-30px center-30 make-responsive-width">
+  <div class="padding-bottom-30px center-30 make-responsive">
     <h2>
       <span>{{ content }}</span>
     </h2>
