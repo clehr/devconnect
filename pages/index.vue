@@ -11,15 +11,30 @@
 
     <Divider content="Why mentoring?" class="margin-top-5" />
     <div class="margin-bottom-5 center width-70">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-      sit amet.
+      Our idea of a growing and diverse community is already 5 years old and
+      finally it takes a concrete form!<br /><br />
+
+      Especially as a beginner it's hard to find his/her own way into the IT
+      world as there is so much to explore.<br /><br />
+
+      Should I become a backend or a frontend developer? Which language do I
+      chose? Java, Javascript or maybe better Ruby? Where to start? <br /><br />
+
+      Also many struggle if they are even suited to become developer especially
+      when they have reached a certain age. Often the thought is: "I'm too old
+      to become a programmer". <br /><br />
+
+      The message of DevConnect is quite clear: "No, you are not! And yes also
+      you can become a developer."<br /><br />
+
+      As in our opinion everyone has the potencial to learn new things we want
+      to empower that.<br /><br />
+      And what is the best way to do that? By having a caring and supportive
+      community and mentors that will guide you through the process of getting
+      more experience and getting to know a lot of people that are beginners
+      like you. <br /><br />
+
+      Today's beginners are tomorrows mentors, so join us today!
     </div>
 
     <Divider content="Mission" />
