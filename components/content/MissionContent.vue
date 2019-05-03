@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import Figure from '../components/Figure'
+import Figure from '../icons/Figure'
 
 export default {
   name: 'MissionContent',

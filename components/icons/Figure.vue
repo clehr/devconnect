@@ -1,6 +1,10 @@
 <template>
   <figure>
-    <img :src="require('../assets/' + img)" :width="width" :height="height" />
+    <img
+      :src="require('../../assets/' + img)"
+      :width="width"
+      :height="height"
+    />
     <figcaption>
       <h3>{{ caption }}</h3>
     </figcaption>

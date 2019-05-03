@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import RoundImage from '../components/RoundImage'
+import RoundImage from '../RoundImage'
 
 export default {
   name: 'AboutUsContent',

@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import SocialIcon from '../components/SocialIcon'
-import EmailIcon from '../components/EmailIcon'
+import SocialIcon from '../icons/SocialIcon'
+import EmailIcon from '../icons/EmailIcon'
 
 export default {
   name: 'GetInvolvedContent',
