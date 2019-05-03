@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div>
     <img alt="DevConnect logo" src="../assets/logo-above-name--dark.png" />
     <div class="subtitle">
       Create &#9679; Learn &#9679; Grow
@@ -66,15 +66,6 @@ export default {
 </script>
 
 <style>
-.app {
-  background-color: #212121;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #4dd0e1 !important;
-}
-
 .subtitle {
   font-size: x-large;
   font-weight: bold;
