@@ -51,8 +51,8 @@
       <IconMentee
         :subpoints="[
           'Decides with the other members on a project they want to develop together',
-          'Grows and connect with other people',
-          'Make first experience in IT in a helpful and caring community'
+          'Grows and connects with other people',
+          'Makes first experience in IT in a helpful and caring community'
         ]"
       />
       <IconTeamCoach
