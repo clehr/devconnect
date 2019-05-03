@@ -64,8 +64,4 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
-
-.make-responsive {
-  max-width: 10px;
-}
 </style>
