@@ -35,7 +35,8 @@ export default {
 <style>
 .justify {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .shorten-80 {
@@ -45,5 +46,9 @@ export default {
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.make-responsive {
+  max-width: 10px;
 }
 </style>

@@ -4,9 +4,10 @@
       :src="require('../../assets/' + img)"
       :width="width"
       :height="height"
+      class="make-responsive"
     />
     <figcaption>
-      <h3>{{ caption }}</h3>
+      <h3 class="make-responsive">{{ caption }}</h3>
     </figcaption>
   </figure>
 </template>
@@ -22,3 +23,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.make-responsive {
+  max-width: 100%;
+  height: auto;
+}
+</style>
