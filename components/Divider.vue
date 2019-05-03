@@ -1,5 +1,5 @@
 <template>
-  <div class="padding-bottom-30px center-30">
+  <div class="padding-bottom-30px center-30 make-responsive-width">
     <h2>
       <span>{{ content }}</span>
     </h2>
@@ -33,5 +33,11 @@ h2 {
 h2 span {
   background: #212121;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .make-responsive {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
 </style>
