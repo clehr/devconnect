@@ -18,7 +18,7 @@
     />
     <RoundImage
       class="grow"
-      img="teacher-pult.png"
+      img="flo.jpg"
       width="75"
       height="75"
       name="Flo"
@@ -26,7 +26,7 @@
     />
     <RoundImage
       class="grow"
-      img="teacher-pult.png"
+      img="angelie.jpeg"
       width="75"
       height="75"
       name="Angelie"
