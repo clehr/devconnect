@@ -54,6 +54,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  flex-flow: column;
 }
 
 .shorten-80 {
@@ -63,5 +64,11 @@ export default {
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .justify {
+    flex-flow: row;
+  }
 }
 </style>
