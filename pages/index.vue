@@ -145,6 +145,7 @@ figure {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-flow: column;
 }
 
 .shorten-80 {
@@ -172,5 +173,11 @@ figure {
 .responsive-app {
   max-width: 90%;
   margin: 10% auto 10%;
+}
+
+@media only screen and (min-width: 768px) {
+  .justify {
+    flex-flow: row;
+  }
 }
 </style>
