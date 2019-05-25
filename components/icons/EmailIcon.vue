@@ -1,5 +1,5 @@
 <template>
-  <div class="margin-bottom-2">
+  <div class="margin-bottom">
     <a :href="`mailto:${email}`">
       <font-awesome-icon :icon="icon" size="3x" />
       <br />
@@ -28,7 +28,7 @@ a {
   text-decoration: none;
   color: #4dd0e1;
 }
-.margin-bottom-2 {
-  margin-bottom: 2%;
+.margin-bottom {
+  margin-bottom: 5%;
 }
 </style>
