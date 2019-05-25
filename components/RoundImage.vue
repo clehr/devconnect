@@ -1,6 +1,6 @@
 <template>
   <a :href="githublink" target="_blank">
-    <figure>
+    <figure class="margin-bottom-2">
       <img
         class="round"
         :src="require('../assets/' + img)"
@@ -30,5 +30,8 @@ export default {
 <style>
 .round {
   border-radius: 50%;
+}
+.margin-bottom-2 {
+  margin-bottom: 2%;
 }
 </style>
