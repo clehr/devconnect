@@ -13,7 +13,7 @@
         'Makes first experience in IT in a helpful and caring community'
       ]"
     />
-    <IconTeamCoach
+    <TeamCoach
       :subpoints="[
         'Guides the others through the team project',
         'Is the connection between other teams',
@@ -31,14 +31,19 @@
   </div>
 </template>
 <script>
-import IconMentee from '../icons/IconMentee'
-import IconMentor from '../icons/IconMentor'
-import IconOrganizer from '../icons/IconOrganizer'
-import IconTeamCoach from '../icons/IconTeamCoach'
+import IconMentee from '../icons/Mentee'
+import IconMentor from '../icons/Mentor'
+import IconOrganizer from '../icons/Organizer'
+import TeamCoach from '../icons/TeamCoach'
 
 export default {
   name: 'Roles',
-  components: { IconMentee, IconMentor, IconOrganizer, IconTeamCoach }
+  components: {
+    TeamCoach,
+    IconMentee,
+    IconMentor,
+    IconOrganizer
+  }
 }
 </script>
 <style>
