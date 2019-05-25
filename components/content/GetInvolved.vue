@@ -9,16 +9,16 @@
         text="@devconnectHH"
         href="https://twitter.com/devconnectHH"
       />
+      <EmailIcon
+        class="inline-block grow"
+        icon="envelope"
+        email="devconnect.hh@gmail.com"
+      />
       <SocialIcon
         class="inline-block grow margin-left-4em"
         icon="meetup"
         text="devconnect HH"
         href="https://www.meetup.com/de-DE/devconnect-hh/"
-      />
-      <EmailIcon
-        class="inline-block grow"
-        icon="envelope"
-        email="devconnect.hh@gmail.com"
       />
     </div>
     <br />
