@@ -53,7 +53,7 @@ export default {
 .justify {
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: baseline;
   flex-flow: column;
 }
 
