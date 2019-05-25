@@ -53,10 +53,6 @@ export default {
   margin-right: auto;
 }
 
-.margin-left-4em {
-  margin-left: 4em;
-}
-
 .grow {
   transition: transform 0.2s ease-in-out;
 }
