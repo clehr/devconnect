@@ -1,7 +1,7 @@
 <template>
   <div class="margin-bottom">
-    <a :href="`mailto:${email}`">
-      <font-awesome-icon :icon="icon" size="3x" class="dark-blue" />
+    <a :href="`mailto:${email}`" class="dark-blue">
+      <font-awesome-icon :icon="icon" size="3x" />
       <br />
       {{ displayEmail }}
     </a>
@@ -34,10 +34,6 @@ a {
 }
 
 .dark-blue:hover {
-  color: #135b79;
-}
-
-text:hover {
   color: #135b79;
 }
 </style>
