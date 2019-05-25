@@ -1,5 +1,5 @@
 <template>
-  <figure class="margin-bottom-5">
+  <figure class="margin-bottom-15-p">
     <img
       :src="require('../../assets/' + img)"
       :width="width"
@@ -40,7 +40,7 @@ export default {
 .align-items-in-center {
   text-align: center;
 }
-.margin-bottom-5 {
+.margin-bottom-15-p {
   margin-bottom: 15%;
 }
 </style>

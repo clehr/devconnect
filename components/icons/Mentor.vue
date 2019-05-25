@@ -1,5 +1,5 @@
 <template>
-  <figure>
+  <figure class="margin-bottom-15">
     <span class="flex-row--centered">
       <font-awesome-icon :icon="iconFemale.name" :size="iconFemale.size" />
       <font-awesome-icon
@@ -53,5 +53,8 @@ export default {
 }
 .align-items-in-center {
   text-align: center;
+}
+.margin-bottom-15 {
+  margin-bottom: 15%;
 }
 </style>
