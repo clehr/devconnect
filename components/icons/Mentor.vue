@@ -8,7 +8,9 @@
       />
     </span>
     <figcaption class="icon__caption">Mentor</figcaption>
-    <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
+    <ul class="align-items-in-center">
+      <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
+    </ul>
   </figure>
 </template>
 
@@ -42,10 +44,14 @@ export default {
   font-size: 1.3em;
   font-weight: bold;
 }
+
 .flex-row--centered {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+.align-items-in-center {
+  text-align: center;
 }
 </style>
