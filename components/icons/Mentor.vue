@@ -1,5 +1,5 @@
 <template>
-  <figure class="icon--mentor">
+  <figure>
     <span class="flex-row--centered">
       <font-awesome-icon :icon="iconFemale.name" :size="iconFemale.size" />
       <font-awesome-icon
@@ -43,11 +43,6 @@ export default {
   font-weight: bold;
 }
 .flex-row--centered {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.icon--mentor {
   display: flex;
   flex-direction: row;
   align-items: center;
