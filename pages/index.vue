@@ -37,7 +37,7 @@
       Today's beginners are tomorrows mentors, so join us today!
     </div>
 
-    <Divider content="Mission" />
+    <Divider content="Our Mission" />
     <OurMission class="margin-bottom-5" />
 
     <Divider content="Roles" />
