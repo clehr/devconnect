@@ -1,5 +1,5 @@
 <template>
-  <figure>
+  <figure class="center">
     <span class="flex-column">
       <font-awesome-icon
         class="margin-bottom-minus-0-25em"
@@ -49,5 +49,11 @@ export default {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>

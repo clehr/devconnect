@@ -47,4 +47,9 @@ export default {
   flex-direction: row;
   align-items: center;
 }
+.icon--mentor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 </style>
