@@ -17,7 +17,10 @@
 export default {
   name: 'IconMentee',
   props: {
-    subpoints: Object
+    subpoints: {
+      default: () => [],
+      type: Array
+    }
   },
   data: function() {
     return {

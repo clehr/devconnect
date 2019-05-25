@@ -32,7 +32,10 @@
 export default {
   name: 'IconOrganizer',
   props: {
-    subpoints: Object
+    subpoints: {
+      default: () => [],
+      type: Array
+    }
   },
   data: function() {
     return {

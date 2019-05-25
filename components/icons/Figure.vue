@@ -21,7 +21,10 @@ export default {
     width: String,
     height: String,
     img: String,
-    subpoints: Object
+    subpoints: {
+      default: () => [],
+      type: Array
+    }
   }
 }
 </script>

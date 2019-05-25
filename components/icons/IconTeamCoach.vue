@@ -10,7 +10,10 @@
 export default {
   name: 'IconTeamCoach',
   props: {
-    subpoints: Object
+    subpoints: {
+      default: () => [],
+      type: Array
+    }
   }
 }
 </script>
