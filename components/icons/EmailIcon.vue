@@ -28,11 +28,16 @@ a {
   text-decoration: none;
   color: #4dd0e1;
 }
+
 .margin-bottom {
   margin-bottom: 5%;
 }
 
 .dark-blue:hover {
+  color: #135b79;
+}
+
+text:hover {
   color: #135b79;
 }
 </style>

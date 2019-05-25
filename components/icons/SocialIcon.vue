@@ -1,6 +1,6 @@
 <template>
   <div class="margin-bottom">
-    <a :href="href" target="_blank">
+    <a :href="href" target="_blank" class="dark-blue">
       <font-awesome-icon :icon="['fab', icon]" size="3x" />
       <br />
       {{ text }}
@@ -29,5 +29,9 @@ a:visited {
 }
 .margin-bottom {
   margin-bottom: 5%;
+}
+
+.dark-blue:hover {
+  color: #135b79;
 }
 </style>
