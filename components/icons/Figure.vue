@@ -43,4 +43,10 @@ export default {
 .margin-bottom-15-p {
   margin-bottom: 15%;
 }
+
+@media only screen and (min-width: 768px) {
+  .margin-bottom-15-p {
+    margin-bottom: 0;
+  }
+}
 </style>

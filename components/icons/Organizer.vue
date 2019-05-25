@@ -104,4 +104,10 @@ export default {
   flex-flow: column;
   align-items: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .margin-bottom-15 {
+    margin-bottom: 0;
+  }
+}
 </style>
