@@ -62,7 +62,7 @@ export default {
 }
 
 .align-items-in-center {
-  text-align: center;
+  text-align: left;
 }
 .margin-bottom-15 {
   margin-bottom: 15%;

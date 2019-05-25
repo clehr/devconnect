@@ -38,7 +38,7 @@ export default {
 }
 
 .align-items-in-center {
-  text-align: center;
+  text-align: left;
 }
 .margin-bottom-15-p {
   margin-bottom: 15%;
