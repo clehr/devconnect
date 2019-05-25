@@ -83,5 +83,6 @@ export default {
 .grow:hover {
   /*  Making button bigger on hover  */
   transform: scale(1.4) perspective(1px);
+  color: #135b79;
 }
 </style>
