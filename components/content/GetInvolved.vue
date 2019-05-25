@@ -41,6 +41,7 @@ export default {
 <style>
 .justify {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
