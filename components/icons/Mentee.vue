@@ -9,7 +9,9 @@
       <font-awesome-icon :icon="iconMale.name" :size="iconMale.size" />
     </span>
     <figcaption class="icon__caption">Mentee</figcaption>
-    <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
+    <ul class="align-items-in-center">
+      <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
+    </ul>
   </figure>
 </template>
 
@@ -41,11 +43,13 @@ export default {
 .margin-bottom-minus-0-25em {
   margin-bottom: -0.25em;
 }
+
 .icon__caption {
   margin-top: 1em;
   font-size: 1.3em;
   font-weight: bold;
 }
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -55,5 +59,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.align-items-in-center {
+  text-align: center;
 }
 </style>

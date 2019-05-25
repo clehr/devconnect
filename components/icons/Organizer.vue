@@ -24,7 +24,9 @@
       />
     </span>
     <figcaption class="icon__caption">Organizer</figcaption>
-    <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
+    <ul class="align-items-in-center">
+      <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
+    </ul>
   </figure>
 </template>
 
@@ -90,5 +92,8 @@ export default {
 }
 .margin-bottom-minus-4em {
   margin-bottom: -4em;
+}
+.align-items-in-center {
+  text-align: center;
 }
 </style>

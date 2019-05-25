@@ -8,7 +8,9 @@
     />
     <figcaption>
       <h3 class="make-responsive">{{ caption }}</h3>
-      <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
+      <ul class="align-items-in-center">
+        <li v-for="subpoint in subpoints" :key="subpoint">{{ subpoint }}</li>
+      </ul>
     </figcaption>
   </figure>
 </template>
@@ -33,5 +35,9 @@ export default {
 .make-responsive {
   max-width: 100%;
   height: auto;
+}
+
+.align-items-in-center {
+  text-align: center;
 }
 </style>
