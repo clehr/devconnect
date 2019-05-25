@@ -55,7 +55,7 @@
 import RoundImage from '../RoundImage'
 
 export default {
-  name: 'AboutUsContent',
+  name: 'AboutUs',
   components: { RoundImage }
 }
 </script>
@@ -64,6 +64,7 @@ export default {
 .justify {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .width-65p {

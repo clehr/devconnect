@@ -38,25 +38,25 @@
     </div>
 
     <Divider content="Mission" />
-    <MissionContent class="margin-bottom-5" />
+    <OurMission class="margin-bottom-5" />
 
     <Divider content="Roles" />
     <Roles />
 
     <Divider content="Get involved" />
-    <GetInvolvedContent class="margin-bottom-5" />
+    <GetInvolved class="margin-bottom-5" />
 
     <Divider content="About us" />
-    <AboutUsContent />
+    <AboutUs />
 
     <Impressum class="margin-top-5" />
   </div>
 </template>
 
 <script>
-import AboutUsContent from '../components/content/AboutUs'
-import GetInvolvedContent from '../components/content/GetInvolved'
-import MissionContent from '../components/content/OurMission'
+import AboutUs from '../components/content/AboutUs'
+import GetInvolved from '../components/content/GetInvolved'
+import OurMission from '../components/content/OurMission'
 import Impressum from '../components/content/Impressum'
 import Divider from '../components/Divider'
 import Roles from '../components/content/Roles'
@@ -64,9 +64,9 @@ import Roles from '../components/content/Roles'
 export default {
   components: {
     Roles,
-    AboutUsContent,
-    GetInvolvedContent,
-    MissionContent,
+    AboutUs,
+    GetInvolved,
+    OurMission,
     Impressum,
     Divider
   },

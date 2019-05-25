@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'IconMentor',
+  name: 'Mentor',
   props: {
     subpoints: {
       default: () => [],

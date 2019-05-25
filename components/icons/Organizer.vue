@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: 'IconOrganizer',
+  name: 'Organizer',
   props: {
     subpoints: {
       default: () => [],

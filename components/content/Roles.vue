@@ -1,12 +1,12 @@
 <template>
   <div class="justify shorten-80 center margin-bottom-5">
-    <IconMentor
+    <Mentor
       :subpoints="[
         'Actively develops with the other members in a group of max 6 people',
         'Assists and cares for the other members in every questions regarding IT'
       ]"
     />
-    <IconMentee
+    <Mentee
       :subpoints="[
         'Decides with the other members on a project they want to develop together',
         'Grows and connects with other people',
@@ -21,7 +21,7 @@
         'Does retrospectives with the team with the goal to make everyone happier'
       ]"
     />
-    <IconOrganizer
+    <Organizer
       :subpoints="[
         'Assists in organizing meetups and talks',
         'Actively helps to grow DevConnect',
@@ -31,18 +31,18 @@
   </div>
 </template>
 <script>
-import IconMentee from '../icons/Mentee'
-import IconMentor from '../icons/Mentor'
-import IconOrganizer from '../icons/Organizer'
+import Mentee from '../icons/Mentee'
+import Mentor from '../icons/Mentor'
+import Organizer from '../icons/Organizer'
 import TeamCoach from '../icons/TeamCoach'
 
 export default {
   name: 'Roles',
   components: {
     TeamCoach,
-    IconMentee,
-    IconMentor,
-    IconOrganizer
+    Mentee,
+    Mentor,
+    Organizer
   }
 }
 </script>

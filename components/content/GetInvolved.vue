@@ -33,7 +33,7 @@ import SocialIcon from '../icons/SocialIcon'
 import EmailIcon from '../icons/EmailIcon'
 
 export default {
-  name: 'GetInvolvedContent',
+  name: 'GetInvolved',
   components: { EmailIcon, SocialIcon }
 }
 </script>

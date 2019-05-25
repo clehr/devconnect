@@ -44,7 +44,7 @@
 import Figure from '../icons/Figure'
 
 export default {
-  name: 'MissionContent',
+  name: 'OurMission',
   components: { Figure }
 }
 </script>

@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'IconMentee',
+  name: 'Mentee',
   props: {
     subpoints: {
       default: () => [],
