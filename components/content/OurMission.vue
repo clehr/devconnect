@@ -3,8 +3,8 @@
     <Figure
       img="teamwork_light-lady-medium.png"
       caption="Mentoring Community"
-      width="150"
-      height="150"
+      width="125"
+      height="125"
       :subpoints="[
         'Join a welcoming community with more than 80 members',
         'Your level of experience does not matter we welcome everyone from Junior\n' +
@@ -17,8 +17,8 @@
     <Figure
       img="laptop_code--light--small.png"
       caption="Hands On Project"
-      width="175"
-      height="150"
+      width="150"
+      height="125"
       :subpoints="[
         'Gather ideas in your own team of maximal 6 people',
         'Realize your own projects with supervision from a mentor',
@@ -29,8 +29,8 @@
     <Figure
       img="hnd_seedling--light--xs.png"
       caption="Foster Learning"
-      width="175"
-      height="150"
+      width="150"
+      height="125"
       :subpoints="[
         'Grow as a person by tackling challenges as a team',
         'Find and improve your own ideas of what it means to be a developer',
