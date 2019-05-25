@@ -1,5 +1,5 @@
 <template>
-  <figure class="icon--mentor margin-bottom-15">
+  <figure class="margin-bottom-15 center">
     <span class="flex-row--centered margin-bottom-minus-4em">
       <font-awesome-icon
         :icon="['fab', iconSlack.name]"
@@ -98,5 +98,10 @@ export default {
 }
 .margin-bottom-15 {
   margin-bottom: 15%;
+}
+.center {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 </style>
