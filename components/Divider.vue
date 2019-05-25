@@ -10,7 +10,10 @@
 export default {
   name: 'Divider',
   props: {
-    content: String
+    content: {
+      default: () => 'Test',
+      type: String
+    }
   }
 }
 </script>
