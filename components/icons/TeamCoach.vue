@@ -21,7 +21,7 @@ export default {
     return {
       iconMale: {
         name: 'chalkboard-teacher',
-        size: '9x'
+        size: '8x'
       }
     }
   }
