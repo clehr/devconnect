@@ -41,6 +41,6 @@ export default {
   text-align: center;
 }
 .margin-bottom-5 {
-  margin-bottom: 5px;
+  margin-bottom: 15%;
 }
 </style>
