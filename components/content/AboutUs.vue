@@ -10,7 +10,7 @@
     />
     <RoundImage
       class="grow"
-      img="steffi.jpeg"
+      img="steffi.jpg"
       width="75"
       height="75"
       name="Stefanie"
@@ -22,7 +22,7 @@
       width="75"
       height="75"
       name="Flo"
-      githublink="https://github.com/clehr"
+      githublink="#"
     />
     <RoundImage
       class="grow"
@@ -30,7 +30,7 @@
       width="75"
       height="75"
       name="Angelie"
-      githublink="https://github.com/clehr"
+      githublink="#"
     />
     <RoundImage
       class="grow"
@@ -38,7 +38,7 @@
       width="75"
       height="75"
       name="Mary"
-      githublink="https://github.com/clehr"
+      githublink="#"
     />
     <RoundImage
       class="grow"
