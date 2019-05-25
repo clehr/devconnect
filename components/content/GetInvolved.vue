@@ -62,4 +62,12 @@ export default {
   /*  Making button bigger on hover  */
   transform: scale(1.4) perspective(1px);
 }
+
+@media only screen and (min-width: 768px) {
+  .justify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 </style>
