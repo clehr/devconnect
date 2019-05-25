@@ -126,6 +126,6 @@ figure {
 }
 .responsive-app {
   max-width: 90%;
-  margin: 10% auto 10%;
+  margin: 5% auto 10%;
 }
 </style>
