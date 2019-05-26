@@ -18,11 +18,26 @@
 export default {
   name: 'RoundImage',
   props: {
-    name: String,
-    width: String,
-    height: String,
-    img: String,
-    githublink: String
+    name: {
+      type: String,
+      default: ''
+    },
+    width: {
+      type: String,
+      default: ''
+    },
+    height: {
+      type: String,
+      default: ''
+    },
+    img: {
+      type: String,
+      default: ''
+    },
+    githublink: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
