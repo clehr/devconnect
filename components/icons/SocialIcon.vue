@@ -12,9 +12,18 @@
 export default {
   name: 'SocialIcon',
   props: {
-    text: String,
-    icon: String,
-    href: String
+    text: {
+      type: String,
+      default: ''
+    },
+    icon: {
+      type: String,
+      default: ''
+    },
+    href: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

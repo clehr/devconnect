@@ -12,8 +12,14 @@
 export default {
   name: 'EmailIcon',
   props: {
-    email: String,
-    icon: String
+    email: {
+      type: String,
+      default: ''
+    },
+    icon: {
+      type: String,
+      default: ''
+    }
   },
   computed: {
     displayEmail: function() {

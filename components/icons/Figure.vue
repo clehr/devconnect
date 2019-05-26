@@ -19,10 +19,22 @@
 export default {
   name: 'Figure',
   props: {
-    caption: String,
-    width: String,
-    height: String,
-    img: String,
+    caption: {
+      type: String,
+      default: ''
+    },
+    width: {
+      type: String,
+      default: ''
+    },
+    height: {
+      type: String,
+      default: ''
+    },
+    img: {
+      type: String,
+      default: ''
+    },
     subpoints: {
       default: () => [],
       type: Array
