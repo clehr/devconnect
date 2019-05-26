@@ -3,7 +3,7 @@
     <Mentor
       :subpoints="[
         'Actively develops with the other members in a group of max 6 people',
-        'Assists and cares for the other members in every questions regarding IT'
+        'Assists and cares for the other members in all questions regarding IT'
       ]"
     />
     <Mentee
@@ -18,7 +18,8 @@
         'Guides the others through the team project',
         'Is the connection between other teams',
         'Cares for organizational things regarding the team',
-        'Does retrospectives with the team with the goal to make everyone happier'
+        `Does retrospectives to continuously improve
+        teamwork by reflecting on past events`
       ]"
     />
     <Organizer
