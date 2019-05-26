@@ -4,6 +4,25 @@ import pkg from './package'
 export default {
   mode: 'spa',
 
+  /**
+   * Webmanifest
+   */
+  manifest: {
+    name: 'DevConnect',
+    short_name: 'DevConnect',
+    lang: 'en',
+    icons: [
+      {
+        src: '/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png'
+      }
+    ],
+    theme_color: '#000000',
+    background_color: '#000000',
+    display: 'standalone'
+  },
+
   /*
    ** Headers of the page
    */
