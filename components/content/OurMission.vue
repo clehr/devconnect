@@ -6,11 +6,11 @@
       width="125"
       height="125"
       :subpoints="[
-        'Join a welcoming community with more than 80 members',
-        'Your level of experience does not matter we welcome everyone from Junior\n' +
-          '      to Senior',
-        ' We are a trying to build up a diverse community with a learn friendly open\n' +
-          '      environment'
+        `Join a welcoming community with more than 80 members`,
+        `Your level of experience does not matter we welcome everyone from Junior
+        to Senior`,
+        `We are a trying to build up a diverse community with a friendly open
+        learning environment`
       ]"
     />
 
