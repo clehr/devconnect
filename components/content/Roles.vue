@@ -1,12 +1,12 @@
 <template>
   <v-layout row wrap align-baseline class="roles">
     <v-flex
-      v-for="role in data.types"
+      v-for="role in data.roles"
       :key="role.id"
       xs12
-      md6
+      sm6
       lg3
-      class="roles__item"
+      class="roles__col"
     >
       <Card :data="role">
         <component
@@ -50,26 +50,16 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+// The wrapper ensures a margin is applied to the following below division in small vieport widths.
+// Vuetifys spacer helpers seems only support margins and paddings in general,
+// they cannot be individually adjusted to the respective viewport width.
+// Vuetify spacing helpers: https://vuetifyjs.com/en/framework/spacing
 .roles {
-  +breakpoint-up(sm){
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  width: 100%;
-
-  &__item {
+  &__col {
     +breakpoint-up(sm){
-      columns= 2;
-      flex: 0 0 (100% / columns);
-      width: (100% / columns);
-    }
-    +breakpoint-up(md){
-      columns= 4;
-      flex: 0 0 (100% / columns);
-      width: (100% / columns);
       margin-bottom: 0;
     }
+
     margin-bottom: space * 4;
   }
 }

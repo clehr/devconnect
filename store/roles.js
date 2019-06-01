@@ -1,5 +1,5 @@
 export const state = () => ({
-  types: {
+  roles: {
     mentor: {
       name: 'Mentor',
       points: [
