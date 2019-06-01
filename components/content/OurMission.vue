@@ -1,74 +1,40 @@
 <template>
-  <div class="center justify shorten-80">
-    <Figure
-      img="teamwork_light-lady-medium.png"
-      caption="Mentoring Community"
-      width="125"
-      height="125"
-      :subpoints="[
-        'Join a welcoming community with more than 80 members',
-        'Your level of experience does not matter we welcome everyone from Junior\n' +
-          '      to Senior',
-        ' We are a trying to build up a diverse community with a learn friendly open\n' +
-          '      environment'
-      ]"
-    />
-
-    <Figure
-      img="laptop_code--light--small.png"
-      caption="Hands On Project"
-      width="150"
-      height="125"
-      :subpoints="[
-        'Gather ideas in your own team of maximal 6 people',
-        'Realize your own projects with supervision from a mentor',
-        'Get experience by working on fun projects'
-      ]"
-    />
-
-    <Figure
-      img="hnd_seedling--light--xs.png"
-      caption="Foster Learning"
-      width="150"
-      height="125"
-      :subpoints="[
-        'Grow as a person by tackling challenges as a team',
-        'Find and improve your own ideas of what it means to be a developer',
-        'Inspire others by telling your story of becoming/being a software developer'
-      ]"
-    />
-  </div>
+  <v-layout row wrap align-baseline class="our-mission">
+    <v-flex
+      v-for="point in data.points"
+      :key="point.id"
+      xs12
+      md4
+      class="our-mission__item"
+    >
+      <Card :data="point">
+        <img :src="point.img" :width="point.width" :height="point.height" />
+      </Card>
+    </v-flex>
+  </v-layout>
 </template>
-
 <script>
-import Figure from '../icons/Figure'
+import Card from '../ui/card'
 
 export default {
   name: 'OurMission',
-  components: { Figure }
+  components: { Card },
+  props: {},
+  computed: {
+    data() {
+      return this.$store.state.ourMission
+    }
+  }
 }
 </script>
+<style lang="stylus" scoped>
+.our-mission {
+    &__item {
+      margin-bottom: space * 4;
 
-<style>
-.justify {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  flex-flow: column;
-}
-
-.shorten-80 {
-  width: 80%;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .justify {
-    flex-flow: row;
-  }
+      +breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
 }
 </style>

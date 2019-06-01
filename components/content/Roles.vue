@@ -1,79 +1,76 @@
 <template>
-  <div class="justify shorten-80 center margin-bottom-5">
-    <Mentor
-      :subpoints="[
-        'Actively develops with the other members in a group of max 6 people',
-        'Assists and cares for the other members in every questions regarding IT'
-      ]"
-    />
-    <Mentee
-      :subpoints="[
-        'Decides with the other members on a project they want to develop together',
-        'Grows and connects with other people',
-        'Makes first experience in IT in a helpful and caring community'
-      ]"
-    />
-    <TeamCoach
-      :subpoints="[
-        'Guides the others through the team project',
-        'Is the connection between other teams',
-        'Cares for organizational things regarding the team',
-        'Does retrospectives with the team with the goal to make everyone happier'
-      ]"
-    />
-    <Organizer
-      :subpoints="[
-        'Assists in organizing meetups and talks',
-        'Actively helps to grow DevConnect',
-        'Helps with the social media presence'
-      ]"
-    />
-  </div>
+  <v-layout row wrap align-baseline class="roles">
+    <v-flex
+      v-for="role in data.types"
+      :key="role.id"
+      xs12
+      md6
+      lg3
+      class="roles__item"
+    >
+      <Card :data="role">
+        <component
+          :is="role.name + 'Icon'"
+          v-bind="role.attributes"
+          :data="role"
+        />
+      </Card>
+    </v-flex>
+  </v-layout>
 </template>
 <script>
-import Mentee from '../icons/Mentee'
-import Mentor from '../icons/Mentor'
-import Organizer from '../icons/Organizer'
-import TeamCoach from '../icons/TeamCoach'
+import MenteeIcon from '../icons/MenteeIcon'
+import MentorIcon from '../icons/MentorIcon'
+import OrganizerIcon from '../icons/OrganizerIcon'
+import TeamCoachIcon from '../icons/TeamCoachIcon'
+import Card from '../ui/card'
 
 export default {
   name: 'Roles',
   components: {
-    TeamCoach,
-    Mentee,
-    Mentor,
-    Organizer
+    TeamCoachIcon,
+    MenteeIcon,
+    MentorIcon,
+    OrganizerIcon,
+    Card
+  },
+  props: {},
+  data() {
+    return {
+      organizerIcon: 'OrganizerIcon',
+      menteeIcon: 'MenteeIcon',
+      teamcoachIcon: 'TeamCoachIcon'
+    }
+  },
+  computed: {
+    data() {
+      return this.$store.state.roles
+    }
   }
 }
 </script>
-<style>
-figure {
-  display: inline-block;
-}
+<style lang="stylus" scoped>
+.roles {
+  +breakpoint-up(sm){
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  width: 100%;
 
-.justify {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column;
-}
-
-.shorten-80 {
-  width: 80%;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.margin-bottom-5 {
-  margin-bottom: 5%;
-}
-
-@media only screen and (min-width: 768px) {
-  .justify {
-    flex-flow: row;
+  &__item {
+    +breakpoint-up(sm){
+      columns= 2;
+      flex: 0 0 (100% / columns);
+      width: (100% / columns);
+    }
+    +breakpoint-up(md){
+      columns= 4;
+      flex: 0 0 (100% / columns);
+      width: (100% / columns);
+      margin-bottom: 0;
+    }
+    margin-bottom: space * 4;
   }
 }
 </style>

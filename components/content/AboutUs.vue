@@ -1,54 +1,18 @@
 <template>
-  <div class="width-65p center justify">
-    <RoundImage
-      class="grow"
-      img="chris.jpeg"
-      width="75"
-      height="75"
-      name="Christian"
-      githublink="https://github.com/clehr"
-    />
-    <RoundImage
-      class="grow"
-      img="steffi.jpg"
-      width="75"
-      height="75"
-      name="Stefanie"
-      githublink="https://github.com/StefanieStoppel/"
-    />
-    <RoundImage
-      class="grow"
-      img="flo.jpg"
-      width="75"
-      height="75"
-      name="Flo"
-      githublink="#"
-    />
-    <RoundImage
-      class="grow"
-      img="angelie.jpeg"
-      width="75"
-      height="75"
-      name="Angelie"
-      githublink="#"
-    />
-    <RoundImage
-      class="grow"
-      img="mary.jpeg"
-      width="75"
-      height="75"
-      name="Mary"
-      githublink="#"
-    />
-    <RoundImage
-      class="grow"
-      img="holger.png"
-      width="75"
-      height="75"
-      name="Holger"
-      githublink="https://github.com/holgzn"
-    />
-  </div>
+  <v-layout row wrap align-baseline justify-center>
+    <v-flex v-for="member in data.aboutUs" :key="member.id" xs4 sm2>
+      <a
+        v-if="member.githublink.length"
+        :href="member.githublink"
+        target="_blank"
+      >
+        <RoundImage class="grow" :item="member"></RoundImage>
+      </a>
+      <span v-else :key="member.id">
+        <RoundImage class="grow" :item="member"></RoundImage>
+      </span>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
@@ -56,33 +20,23 @@ import RoundImage from '../RoundImage'
 
 export default {
   name: 'AboutUs',
-  components: { RoundImage }
+  components: { RoundImage },
+  computed: {
+    data() {
+      return this.$store.state.homepage
+    }
+  }
 }
 </script>
 
-<style>
-.justify {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.width-65p {
-  width: 65%;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
+<style lang="stylus">
 .grow {
   transition: transform 0.2s ease-in-out;
-}
-
-.grow:hover {
-  /*  Making button bigger on hover  */
-  transform: scale(1.4) perspective(1px);
-  color: #135b79;
+  +breakpoint-up(sm) {
+    &:hover {
+      color: #135b79;
+      transform: scale(1.4) perspective(1px);
+    }
+  }
 }
 </style>

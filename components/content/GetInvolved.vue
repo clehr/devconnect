@@ -1,31 +1,40 @@
 <template>
-  <div>
-    If you want to join us or even just want to have a look and say hello you
-    can find us under: <br /><br />
-    <div class="justify shorten center">
+  <v-layout row wrap align-baseline class="get-involved">
+    <v-flex xs12>
+      <p class="get-involved__text">
+        If you want to join us or even just want to have a look and say hello
+        you can find us under:
+      </p>
+    </v-flex>
+    <v-flex xs12 sm4>
       <SocialIcon
         class="inline-block grow"
         icon="twitter"
         text="@devconnectHH"
         href="https://twitter.com/devconnectHH"
       />
+    </v-flex>
+    <v-flex xs12 sm4>
       <EmailIcon
         class="inline-block grow"
         icon="envelope"
         email="devconnect.hh@gmail.com"
       />
+    </v-flex>
+    <v-flex xs12 sm4>
       <SocialIcon
         class="inline-block grow margin-left-4em"
         icon="meetup"
         text="devconnect HH"
         href="https://www.meetup.com/de-DE/devconnect-hh/"
       />
-    </div>
-    <br />
-    <br />
-
-    Looking forward to see you! :)
-  </div>
+    </v-flex>
+    <v-flex xs12>
+      <p class="get-involved__subtext">
+        Looking forward to see you! :)
+      </p>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
@@ -38,36 +47,19 @@ export default {
 }
 </script>
 
-<style>
-.justify {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.shorten {
-  width: 50%;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.grow {
-  transition: transform 0.2s ease-in-out;
-}
-
-.grow:hover {
-  /*  Making button bigger on hover  */
-  transform: scale(1.4) perspective(1px);
-}
-
-@media only screen and (min-width: 768px) {
-  .justify {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+<style lang="stylus" scoped>
+.get-involved {
+  &__text {
+    margin-bottom: space * 2;
   }
+  &__subtext {
+    margin-top: space * 2;
+  }
+}
+.grow {
+  &:hover {
+    transform: scale(1.4) perspective(1px);
+  }
+  transition: transform 0.2s ease-in-out;
 }
 </style>
