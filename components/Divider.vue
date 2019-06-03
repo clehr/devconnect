@@ -1,8 +1,9 @@
 <template>
-  <div class="padding-bottom-30px center-30 make-responsive">
-    <h2>
+  <div class="divider">
+    <h2 v-if="content" class="divider__line">
       <span>{{ content }}</span>
     </h2>
+    <div v-else class="divider__line"></div>
   </div>
 </template>
 
@@ -11,36 +12,29 @@ export default {
   name: 'Divider',
   props: {
     content: {
-      default: () => 'Test',
-      type: String
+      type: String,
+      default: ''
     }
   }
 }
 </script>
 
-<style scoped>
-.center-30 {
-  width: 30%;
-  margin: 0 auto;
-}
+<style lang="stylus" scoped>
+.divider {
 
-.padding-bottom-30px {
-  padding-bottom: 30px;
-}
+  +breakpoint-up(sm) {
+    width: 30%;
+  }
+  margin: (space * 3) auto;
 
-h2 {
-  border-bottom: 1px solid #4dd0e1;
-  line-height: 0.1em;
-}
+  &__line {
+    border-bottom: 1px solid #4dd0e1;
+    line-height: 0.1em;
 
-h2 span {
-  background: #212121;
-  padding: 0 10px;
-}
-
-@media screen and (max-width: 800px) {
-  .make-responsive {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    > span {
+      background: #212121;
+      padding: 0 10px;
+    }
   }
 }
 </style>

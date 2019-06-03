@@ -85,7 +85,7 @@ export default {
     plugins: [new VuetifyLoaderPlugin()],
     loaders: {
       stylus: {
-        import: ['~assets/style/variables.styl']
+        import: ['~assets/style/_variables.styl', '~assets/style/_mixins.styl']
       }
     },
     /*

@@ -1,52 +1,41 @@
 <template>
-  <a :href="githublink" target="_blank">
-    <figure class="margin-bottom">
-      <img
-        class="round"
-        :src="require('../assets/' + img)"
-        :width="width"
-        :height="height"
-      />
-      <figcaption>
-        <h3>{{ name }}</h3>
-      </figcaption>
-    </figure>
-  </a>
+  <figure class="round-image">
+    <img
+      class="round-image__img"
+      :src="item.img"
+      :width="item.width"
+      :height="item.height"
+    />
+    <figcaption>
+      <h4 class="round-image__name">{{ item.name }}</h4>
+    </figcaption>
+  </figure>
 </template>
 
 <script>
 export default {
   name: 'RoundImage',
   props: {
-    name: {
-      type: String,
-      default: ''
-    },
-    width: {
-      type: String,
-      default: ''
-    },
-    height: {
-      type: String,
-      default: ''
-    },
-    img: {
-      type: String,
-      default: ''
-    },
-    githublink: {
-      type: String,
-      default: ''
+    item: {
+      type: Object,
+      default: () => ({})
     }
   }
 }
 </script>
 
-<style>
-.round {
-  border-radius: 50%;
-}
-.margin-bottom {
+<style lang="stylus">
+.round-image {
+  font-size: 1rem;
   margin-bottom: 10%;
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1em;
+    font-weight: 400;
+  }
 }
 </style>

@@ -1,80 +1,66 @@
 <template>
-  <div class="justify shorten-80 center margin-bottom-5">
-    <Mentor
-      :subpoints="[
-        'Actively develops with the other members in a group of max 6 people',
-        'Assists and cares for the other members in all questions regarding IT'
-      ]"
-    />
-    <Mentee
-      :subpoints="[
-        'Decides with the other members on a project they want to develop together',
-        'Grows and connects with other people',
-        'Makes first experience in IT in a helpful and caring community'
-      ]"
-    />
-    <TeamCoach
-      :subpoints="[
-        'Guides the others through the team project',
-        'Is the connection between other teams',
-        'Cares for organizational things regarding the team',
-        `Does retrospectives to continuously improve
-        teamwork by reflecting on past events`
-      ]"
-    />
-    <Organizer
-      :subpoints="[
-        'Assists in organizing meetups and talks',
-        'Actively helps to grow DevConnect',
-        'Helps with the social media presence'
-      ]"
-    />
-  </div>
+  <v-layout row wrap align-baseline class="roles">
+    <v-flex
+      v-for="role in data.roles"
+      :key="role.id"
+      xs12
+      sm6
+      lg3
+      class="roles__col"
+    >
+      <Card :data="role">
+        <component
+          :is="role.name + 'Icon'"
+          v-bind="role.attributes"
+          :data="role"
+        />
+      </Card>
+    </v-flex>
+  </v-layout>
 </template>
 <script>
-import Mentee from '../icons/Mentee'
-import Mentor from '../icons/Mentor'
-import Organizer from '../icons/Organizer'
-import TeamCoach from '../icons/TeamCoach'
+import MenteeIcon from '../icons/MenteeIcon'
+import MentorIcon from '../icons/MentorIcon'
+import OrganizerIcon from '../icons/OrganizerIcon'
+import TeamCoachIcon from '../icons/TeamCoachIcon'
+import Card from '../ui/card'
 
 export default {
   name: 'Roles',
   components: {
-    TeamCoach,
-    Mentee,
-    Mentor,
-    Organizer
+    TeamCoachIcon,
+    MenteeIcon,
+    MentorIcon,
+    OrganizerIcon,
+    Card
+  },
+  props: {},
+  data() {
+    return {
+      organizerIcon: 'OrganizerIcon',
+      menteeIcon: 'MenteeIcon',
+      teamcoachIcon: 'TeamCoachIcon'
+    }
+  },
+  computed: {
+    data() {
+      return this.$store.state.roles
+    }
   }
 }
 </script>
-<style>
-figure {
-  display: inline-block;
-}
+<style lang="stylus" scoped>
+// The wrapper ensures a margin is applied to the following below division in small vieport widths.
+// Vuetifys spacer helpers seems only support margins and paddings in general,
+// they cannot be individually adjusted to the respective viewport width.
+// Vuetify spacing helpers: https://vuetifyjs.com/en/framework/spacing
+.roles {
+  &__col {
+    +breakpoint-up(sm){
+      margin-bottom: 0;
+    }
 
-.justify {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column;
-}
-
-.shorten-80 {
-  width: 80%;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.margin-bottom-5 {
-  margin-bottom: 5%;
-}
-
-@media only screen and (min-width: 768px) {
-  .justify {
-    flex-flow: row;
+    margin-bottom: space * 4;
   }
 }
 </style>
